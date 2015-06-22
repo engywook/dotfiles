@@ -1,4 +1,12 @@
+! Xft settings ---------------------------------------------------------------
+
+Xft.dpi:        96
+Xft.antialias:  true
+Xft.rgba:       rgb
+Xft.hinting:    true
+Xft.hintstyle:  hintslight
 ! General
+Urxvt.selection-to-clipboard: true
 urxvt*termName:  rxvt-256color
 urxvt*loginShell:         true
 urxvt*scrollBar:         false
@@ -10,24 +18,30 @@ urxvt*urgentOnBell:       true
 !urxvt*borderLess:       false
 !urxvt*internalBorder:       0
 !urxvt*externalBorder:       0
+!URxvt.font:               9x15
            
 ! Extensions
-urxvt*perl-lib:        /usr/lib/urxvt/perl/
-urxvt*perl-ext-common: default,matcher,searchable-scrollback
-urxvt*urlLauncher:     /usr/bin/firefox
-urxvt*matcher.button:  1
+!urxvt*perl-lib:        /usr/lib/urxvt/perl/
+!urxvt*perl-ext-common: default,matcher,searchable-scrollback
+!urxvt*urlLauncher:     /usr/bin/firefox
+!urxvt*matcher.button:  1
 !  - catch ugly URLs
-urxvt.cutchars:        `()'*<>[]{|}"
+!urxvt.cutchars:        "`()'*<>[]{|}"
                      
+urxvt.font:               xft:inconsolata:pixelsize=26
+urxvt.boldFont:           xft:inconsolata:pixelsize=28
+urxvt.letterspacing:      -1
+
 ! Appearance
 !  - use a bitmap font
-!urxvt*font:        -xos4-terminus-medium-*-*-*-12-*-*-*-*-*-*-*
-!urxvt*boldFont:    -xos4-terminus-bold-*-*-*-12-*-*-*-*-*-*-*
+! urxvt*font:        -xos4-terminus-medium-*-*-*-12-*-*-*-*-*-*-*
+! urxvt*boldFont:    -xos4-terminus-bold-*-*-*-12-*-*-*-*-*-*-*
 !  - use xft for drawing fonts
-!urxvt*font:       xft:Terminus:8
+! urxvt*font:       xft:Terminus:8
+! urxvt*font: xft:Terminus:pixelsize=22
 !  - cursor
 urxvt*cursorColor: #DCDCCC
- !  - pseudo transparency
+!  - pseudo transparency
 urxvt*shading:   20 
 urxvt*transparent:true
 !
